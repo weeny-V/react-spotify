@@ -31,7 +31,13 @@ export const LoginForm = () => {
         } catch (e) {
             const error = e as Error;
 
-            toast.error(error.message);
+            if (error.message === 'auth/account-exists-with-different-credential.') {
+                toast.error(error.message);
+            } else if (error.message === 'auth/user-not-found') {
+                toast("User with such an email doesn't exist. Please sign up.");
+            } else {
+                toast.error('Wrong email or password.');
+            }
         }
     };
 

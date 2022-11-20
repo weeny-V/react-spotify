@@ -160,11 +160,6 @@ export const thunkLoginUserByGoogleOrFacebook = createAsyncThunk(
         } catch (e) {
             const error = e as any;
 
-            if (error.code === 'auth/account-exists-with-different-credential') {
-                const pendingCard = error.credential;
-                console.log(pendingCard);
-            }
-
             return thunkAPI.rejectWithValue(error.code);
         } finally {
             thunkAPI.dispatch(setLoadingOff());
