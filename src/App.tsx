@@ -12,18 +12,18 @@ function App() {
         <div className='App'>
             <ToastContainer
                 position='top-center'
-                theme='dark' autoClose={4000} closeOnClick={true}/>
+                theme='dark'
+                autoClose={4000}
+                closeOnClick={true}
+            />
             <Routes>
-                <Route path='' element={<Navigate to='home'/>}/>
-                <Route path='home' element={<Home/>}>
-
-                </Route>
-                <Route path='login' element={<Login/>}/>
-                <Route path='signup' element={<Signup/>}/>
+                <Route path='' element={<Navigate to='home' />} />
+                <Route path='home' element={<Home />}></Route>
+                <Route path='login' element={<Login />} />
+                <Route path='signup' element={<Signup />} />
             </Routes>
         </div>
-    )
-        ;
+    );
 }
 
 export default App;

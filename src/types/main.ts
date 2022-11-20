@@ -14,7 +14,7 @@ export interface IUser {
     displayName: string,
 }
 
-export interface Inputs {
+export interface SignupInputs {
     email: string,
     confirmEmail: string,
     password: string,
@@ -24,6 +24,12 @@ export interface Inputs {
     year: string,
     sex: string,
     policy: boolean,
+}
+
+export interface LoginInputs {
+    email: string;
+    password: string;
+    remember: boolean;
 }
 
 export interface UserState {

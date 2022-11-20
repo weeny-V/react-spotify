@@ -6,13 +6,13 @@ import { SignupForm } from './signupForm/signupForm';
 export const Signup = () => {
     return (
         <div className='flex flex-col items-center mb-24 px-2'>
-
             <header className='flex justify-center p-10 w-full'>
-                <img className='w-36' src={logoSpotify} alt='spotify'/>
+                <img className='w-36' src={logoSpotify} alt='spotify' />
             </header>
 
-            <p className='font-black text-3xl max-w-96 w-full text-center mb-12'>Зарегистрируйтесь и слушайте
-                бесплатно</p>
+            <p className='font-black text-3xl max-w-96 w-full text-center mb-12'>
+                Зарегистрируйтесь и слушайте бесплатно
+            </p>
 
             <SignupButtons />
 
@@ -28,9 +28,10 @@ export const Signup = () => {
 
             <div className='flex'>
                 <p className='mr-2'>Уже есть аккаунт?</p>
-                <NavLink className='text-green-500 underline' to='/login'>Войти</NavLink>
+                <NavLink className='text-green-500 underline' to='/login'>
+                    Войти
+                </NavLink>
             </div>
-
         </div>
     );
 };
