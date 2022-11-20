@@ -22,7 +22,7 @@ export const LoginButtons = () => {
         } catch (e) {
             const error = e as Error;
 
-            toast(error.message);
+            toast.error(error.message);
         }
     }
 

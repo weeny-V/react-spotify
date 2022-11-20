@@ -35,7 +35,7 @@ export const SignupForm = () => {
             toast('Your account was successfully created.');
             navigate('/login');
         } catch (err) {
-            toast('Something went wrong try again later');
+            toast.error('Something went wrong try again later');
         }
     };
 
